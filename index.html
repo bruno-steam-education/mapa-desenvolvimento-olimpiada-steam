@@ -212,7 +212,7 @@
       <div class="journey-title"><span>MAPA DE</span>DESENVOLVIMENTO</div>
       <nav class="steps">
         <button class="step active" data-step="0"><i class="step-dot"></i><b>1. DESENVOLVIMENTO</b><small>Competências crescem a cada experiência.</small></button>
-        <button class="step" data-step="1"><i class="step-dot"></i><b>2. APTIDÕES</b><small>O spectrum revela habilidades visíveis e descobertas.</small></button>
+        <button class="step" data-step="1"><i class="step-dot"></i><b>2. APTIDÕES</b><small>O espectro revela habilidades visíveis e descobertas.</small></button>
         <button class="step" data-step="2"><i class="step-dot"></i><b>3. ESTRATÉGIAS</b><small>Competições, modalidades e funções se alinham ao perfil.</small></button>
         <button class="step" data-step="3"><i class="step-dot"></i><b>4. PONTUAÇÃO</b><small>Resultados, evolução e badges.</small></button>
       </nav>
@@ -246,8 +246,8 @@
       </div>
     </section>
 
-    <aside class="control-panel" aria-label="Ajuste do spectrum">
-      <div class="panel-head"><h2>AJUSTE O SPECTRUM</h2><span class="live">ao vivo</span></div>
+    <aside class="control-panel" aria-label="Ajuste do espectro">
+      <div class="panel-head"><h2>AJUSTE O ESPECTRO</h2><span class="live">ao vivo</span></div>
       <div class="controls" id="controls"></div>
       <section class="rankings" aria-labelledby="rankTitle">
         <div class="rank-title" id="rankTitle">4 MELHORES ENCAIXES <span>posição sugerida</span></div>
@@ -286,7 +286,7 @@
       <div class="cert-roles-title">SELOS, COMPETIÇÕES E FUNÇÕES RECOMENDADAS</div>
       <div class="cert-roles" id="certRoles" aria-label="Competições e funções recomendadas"></div>
       <div class="cert-highlight" id="certHighlight"></div>
-      <footer class="cert-footer"><span id="certDate"></span><span>Registro <strong id="certCode"></strong></span><span>Spectrum final <strong id="certScore"></strong></span></footer>
+      <footer class="cert-footer"><span id="certDate"></span><span>Registro <strong id="certCode"></strong></span><span>Espectro final <strong id="certScore"></strong></span></footer>
     </article>
     <div class="cert-actions">
       <button class="cert-action" id="closeCertificate">Fechar</button>
@@ -328,12 +328,12 @@
   const profiles = [
     {values:[42,38,35,32],step:0,msg:'O desenvolvimento começa com experiências diversas.'},
     {values:[72,61,78,53],step:1,msg:'O perfil único aparece à medida que as competências evoluem.'},
-    {values:[86,72,88,66],step:2,msg:'O spectrum direciona competições e estratégias mais aderentes.'},
+    {values:[86,72,88,66],step:2,msg:'O espectro direciona competições e estratégias mais aderentes.'},
     {values:[92,85,94,81],step:3,msg:'Resultados e evolução transformam o perfil em pontuação.'}
   ];
   const stepCopy = [
     ['DESENVOLVIMENTO CONTÍNUO','APTIDÕES',' DESCOBERTAS','Cada ajuste torna habilidades visíveis e reposiciona competições, modalidades e funções recomendadas.'],
-    ['APTIDÕES E HABILIDADES VISÍVEIS','SPECTRUM',' ÚNICO','O mapa torna visíveis forças, preferências e oportunidades de desenvolvimento.'],
+    ['APTIDÕES E HABILIDADES VISÍVEIS','ESPECTRO',' ÚNICO','O mapa torna visíveis forças, preferências e oportunidades de desenvolvimento.'],
     ['ESCOLHA DE COMPETIÇÕES','POSIÇÃO',' RECOMENDADA','O ranking muda conforme os critérios de cada modalidade ou função e a combinação das quatro aptidões.'],
     ['EVOLUÇÃO E RESULTADOS','PONTUAÇÃO',' QUE EVOLUI','Participação, desempenho, desafios e badges consolidam a jornada do estudante.']
   ];
@@ -413,7 +413,7 @@
     document.querySelector('#certDate').textContent='Emitido em '+new Intl.DateTimeFormat('pt-BR',{day:'2-digit',month:'long',year:'numeric'}).format(now);
     document.querySelector('#certCode').textContent=`STEAM-${now.getFullYear()}-${String(now.getMonth()+1).padStart(2,'0')}${String(now.getDate()).padStart(2,'0')}-CL${total}`;
     document.querySelector('#certScore').textContent=`${total} / 400`;
-    document.querySelector('#certHighlight').textContent=`Seu spectrum evidencia maior intensidade na aptidão ${leader.short} (${max}%), com aderência destacada a ${recommendation.name} — ${recommendation.position}.`;
+    document.querySelector('#certHighlight').textContent=`Seu espectro evidencia maior intensidade na aptidão ${leader.short} (${max}%), com aderência destacada a ${recommendation.name} — ${recommendation.position}.`;
   }
   function openCertificate(){stop();setStep(3,false);buildCertificate();document.body.classList.add('cert-open');els.overlay.classList.add('open');els.overlay.setAttribute('aria-hidden','false');launchConfetti();setTimeout(()=>document.querySelector('#closeCertificate').focus(),420)}
   function closeCertificate(){document.body.classList.remove('cert-open');els.overlay.classList.remove('open');els.overlay.setAttribute('aria-hidden','true');els.complete.focus()}
