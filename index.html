@@ -138,7 +138,7 @@
     .cert-orbit{position:absolute;width:105px;aspect-ratio:1;border-radius:50%;border:12px solid var(--blue);box-shadow:0 0 0 12px var(--yellow),0 0 0 24px var(--orange);opacity:.11}.cert-orbit.one{left:-35px;top:-34px}.cert-orbit.two{right:-36px;bottom:-35px}
     .cert-topline{position:absolute;top:36px;left:52px;right:52px;height:2px;background:linear-gradient(90deg,var(--blue) 0 29%,transparent 29% 34%,var(--orange) 34% 63%,transparent 63% 68%,var(--yellow) 68%);z-index:1}
     .cert-logo{position:absolute;left:54px;top:51px;width:148px;height:62px;object-fit:contain;object-position:left center;mix-blend-mode:multiply;z-index:2}
-    .cert-kicker{font:400 11px/1 Bungee,Impact,sans-serif;color:var(--orange);letter-spacing:.08em;margin-bottom:8px;position:relative;z-index:2}.cert-title{font:400 clamp(27px,3.2vw,48px)/1 Bungee,Impact,sans-serif;color:var(--graphite);position:relative;z-index:2}.cert-title span{color:var(--blue)}
+    .cert-kicker{font:400 11px/1 Bungee,Impact,sans-serif;color:var(--orange);letter-spacing:.08em;margin-bottom:12px;position:relative;z-index:2}
     .cert-intro{font-size:14px;color:#5e6167;margin:11px 0 2px;position:relative;z-index:2}.cert-name{font:400 clamp(32px,4.3vw,60px)/1.03 Bungee,Impact,sans-serif;color:var(--blue);margin:3px 0 10px;position:relative;z-index:2}
     .cert-copy{max-width:790px;margin:0;font-size:clamp(11px,1.05vw,14px);line-height:1.45;color:#45484e;position:relative;z-index:2}.cert-copy strong{color:var(--graphite)}
     .cert-seals{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(10px,2vw,26px);width:min(820px,88%);margin:18px auto 12px;position:relative;z-index:2}.cert-seal{--seal:var(--blue);display:grid;justify-items:center;gap:4px;color:var(--seal)}
@@ -272,14 +272,13 @@
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
 </div>
 
-<div class="certificate-overlay" id="certificateOverlay" role="dialog" aria-modal="true" aria-labelledby="certTitle" aria-hidden="true">
+<div class="certificate-overlay" id="certificateOverlay" role="dialog" aria-modal="true" aria-label="Certificado da jornada de desenvolvimento STEAM" aria-hidden="true">
   <div class="certificate-dialog">
     <article class="certificate" id="certificate">
       <i class="cert-orbit one" aria-hidden="true"></i><i class="cert-orbit two" aria-hidden="true"></i>
       <div class="cert-topline" aria-hidden="true"></div>
       <img class="cert-logo" id="certLogo" alt="Olimpíada STEAM">
       <div class="cert-kicker">Olimpíada STEAM · Jornada de desenvolvimento</div>
-      <h2 class="cert-title" id="certTitle"><span>CERTIFICADO</span> DE PERFIL STEAM</h2>
       <p class="cert-intro">Certificamos que</p>
       <div class="cert-name">Clessia Lobo</div>
       <p class="cert-copy">concluiu com dedicação a jornada de mapeamento de aptidões da <strong>Olimpíada STEAM</strong>. Este certificado reconhece a expressão singular de suas habilidades visíveis e descobertas, valorizando seu potencial para investigar, colaborar, criar e transformar ideias em soluções. Que este perfil seja um ponto de partida para novas aprendizagens, desafios e conquistas.</p>
