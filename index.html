@@ -52,6 +52,10 @@
     .kicker{font:400 12px/1 Bungee,Impact,sans-serif;color:var(--orange);letter-spacing:.04em;margin-bottom:8px}
     .stage h1{font-size:clamp(28px,3vw,54px);line-height:.98;letter-spacing:.015em;color:var(--graphite)}
     .stage h1 span{color:var(--blue)}
+    .student-profile{position:absolute;right:0;top:0;display:flex;align-items:center;gap:8px;color:var(--graphite);text-decoration:none;font:800 10px/1 Arial,sans-serif;letter-spacing:.06em;text-transform:uppercase;border-bottom:1px solid #cfd2d6;padding:6px 2px 6px 0;transition:.25s var(--ease)}
+    .student-profile::before{content:"";width:9px;aspect-ratio:1;border-radius:50%;background:var(--blue);box-shadow:0 0 0 4px rgba(4,127,195,.12)}
+    .student-profile strong{font-family:Bungee,Impact,sans-serif;font-weight:400;color:var(--blue);letter-spacing:.02em}
+    .student-profile:hover{color:var(--blue);border-color:var(--blue);transform:translateY(-2px)}
     .stage-sub{margin:10px 0 4px;color:var(--muted);font-size:clamp(12px,1.05vw,16px);max-width:700px}
     .radar-shell{flex:1;display:grid;place-items:center;min-height:350px;position:relative}
     .radar-wrap{position:relative;width:min(100%,610px);aspect-ratio:1.16/1;display:grid;place-items:center}
@@ -135,6 +139,7 @@
       .journey-title{font-size:18px}.step{padding-left:48px}.step-dot{width:36px;border-width:7px}.steps::before{left:20px}.step b{font-size:11px}.step small{font-size:10px}.journey-note{padding-left:48px}
       .control-panel{border-radius:15px}.controls{padding-inline:14px}.scorebox{margin-inline:14px}.panel-head{padding:13px 14px}
       .stage h1{font-size:34px}.radar-shell{min-height:310px}.axis-label{font-size:12px}
+      .student-profile{position:static;align-self:flex-start;margin-top:8px}
     }
     @media(max-height:800px) and (min-width:821px){
       header{height:70px;padding-top:8px;padding-bottom:8px}.brand{height:50px;width:154px}
@@ -186,6 +191,7 @@
     <section class="stage" aria-labelledby="main-title">
       <div class="kicker" id="kicker">DESENVOLVIMENTO CONTÍNUO</div>
       <h1 id="main-title"><span>APTIDÕES</span> DESCOBERTAS</h1>
+      <a class="student-profile" href="https://www.linkedin.com/in/clessialobo/" target="_blank" rel="noopener noreferrer" aria-label="Abrir perfil de Clessia Lobo no LinkedIn">Perfil analisado <strong>Clessia Lobo ↗</strong></a>
       <p class="stage-sub" id="stageSub">Cada ajuste torna habilidades visíveis e reposiciona competições, modalidades e funções recomendadas.</p>
       <div class="radar-shell">
         <div class="radar-wrap">
